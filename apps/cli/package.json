@@ -1,0 +1,29 @@
+{
+  "name": "@siteguard/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "siteguard": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint .",
+    "type-check": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@siteguard/schemas": "workspace:*",
+    "commander": "^14.0.1",
+    "@siteguard/core": "workspace:*",
+    "@siteguard/analyzers": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^24.7.2",
+    "eslint": "^9.38.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}

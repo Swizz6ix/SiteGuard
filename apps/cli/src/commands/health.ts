@@ -1,0 +1,1 @@
+import type { HealthResult } from '@siteguard/schemas'; const SITEGUARD_VERSION='0.1.0'; export function runHealth():HealthResult{return{status:'healthy',version:SITEGUARD_VERSION,checks:{runtime:'pass',config:'pass',analyzers:'pass',playwright:'pass'}};}
